@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>运算符</title>
+ </head>
+ <body>
+	<script>
+	    //算术运算符
+		//1.声明一个变量
+		var num = 1234;
+		//2.通过%10的操作，取出num的最后一位，保存在ge中
+		var ge = num % 10;
+		//console.log("个位是"+ge);
+		//3.通过/10，再将结果转换为整数，去掉num的最后一位，并保存在num中
+        num = parseInt(num / 10);
+		//console.log(num);
+		//4.重复上述操作
+		var shi = num % 10;
+		num = parseInt(num / 10);
+
+	    var bai = num % 10;
+		num = parseInt(num/10);
+		var qian = num;
+		console.log(ge , shi ,bai,qian);
+    </script>
+ </body>
+</html>

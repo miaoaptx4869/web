@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+    <header>
+		<table>
+			<tr>
+				<td width="180px"><img src="jd_logo.png"/></td>
+				<td valign="bottom" height="100px"><h1>欢迎登录</h1></td>
+			</tr>
+		</table>
+	</header>
+	
+	<section>
+		<form>
+			<table width="750px" border="1px" cellspacing="0" bordercolor="black">
+				<tr>
+					<td rowspan="8" width="445px"><img src="login.png"></td>
+					<td>用户名/邮箱：</td>
+				</tr>
+				<tr>
+					
+					<td><input type="text" name="user" value="mary@163.com"/></td>
+				</tr>
+				<tr>
+					
+					<td>密码：</td>
+				</tr>
+				<tr>
+					
+					<td><input type="password" name="psw"/></td>
+				</tr>
+				<tr>
+					
+					<td><input type="checkbox" name="auto" id="auto"/><label for="auto">自动登录</label></td>
+				</tr>
+				<tr>
+					
+					<td align="center">
+						<input type="submit" value="登录"/>
+						<input type="reset" value="重置"/>
+					</td>
+				</tr>
+				<tr>
+					
+					<td>使用京东合作账号登录</td>
+				</tr>
+				<tr>
+					
+					<td align="right">
+						<input type="radio" name="hezuo" value="qq"/>QQ
+						<input type="radio" name="hezuo" value="qianbao"/>京东钱包
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+						<img src="btn_register.jpg"/>
+					</td>
+					
+				</tr>
+			</table>
+		</form>
+		
+	</section>
+
+	<footer>
+		<table align="center" border="1px">
+			<tr valign="bottom">
+				<td height="60px" >关于我们|</td>
+				<td>联系我们|</td>
+				<td>人才招聘|</td>
+				<td>商家入驻|</td>
+				<td>广告服务</td>
+
+			</tr>
+		</table>
+	</footer>
+ </body>
+</html>
