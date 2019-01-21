@@ -20,6 +20,9 @@
 		input = Number(input);
 		input = input + 10;
 		window.alert(input);
+
+		var x;
+		console.log(x=18);
 	</script>
  </body>
 </html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>函数的声明与调用</title>
+ </head>
+ <body>
+	<script>
+		//函数sayHello,在控制台中打印输出Hello World
+		function sayHello(){
+			console.log("Hello World");
+
+		}
+		//调用sayHello函数
+		//sayHello();
+
+		//声明一个函数 -testSayHello，功能：调用sayHello函数
+		function testSayHello(){
+			sayHello();
+			console.log("调用sayHello函数执行完毕");
+		}
+		
+	</script>
+	<button onclick="sayHello();">点我试试</button>
+	<button onclick="testSayHello();">调用testSayHello()</button>
+ </body>
+</html>

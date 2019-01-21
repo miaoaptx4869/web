@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>函数练习</title>
+ </head>
+ <body>
+	<script>
+	//普通函数
+		function change(){
+			var a = Number(prompt("输入一个数字"));
+			var b = Number(prompt("再输入一个数字"));
+			console.log(a , b);
+			a > b && (a ^= b,b ^= a, a^=b);
+			console.log(a,b);
+		}
+	//带参数的函数
+
+		
+	</script>
+	<button onclick = "change();"></button>
+ </body>
+</html>

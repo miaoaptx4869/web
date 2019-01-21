@@ -24,6 +24,10 @@
 		num = parseInt(num/10);
 		var qian = num;
 		console.log(ge , shi ,bai,qian);
+
+		var a=10;
+		var result=a + ++a + a++ + a++ + ++a + a;
+		console.log(result);
     </script>
  </body>
 </html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function showScore(){
+			var score = prompt("请输入成绩");
+			if (score >= 90)
+			{
+				console.log("A");
+			}else if (score >= 80)
+			{
+				console.log("B");
+			}else if (score >= 70)
+			{
+				console.log("C");
+			}else
+			{
+				console.log("D");
+			}
+		}
+	</script>
+	<button onclick = "showScore();">成绩判定</button>
+ </body>
+</html>

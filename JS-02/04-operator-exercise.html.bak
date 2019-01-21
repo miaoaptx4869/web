@@ -7,10 +7,31 @@
  </head>
  <body>
 	<script>
-	    var money = 2;
+	    /*var money = 2;
 		var cost = 1.6;
 		var change = money - cost;
-		console.log(change);
+		console.log(change.toFixed(2));*/
+
+		//关系运算符
+		/*var input = window.prompt("请输入一个数字");
+		var result1 = (input % 2) == 0;
+		var result2 = (input % 2) == 1;
+		console.log(input + "是奇数吗" + result2);
+		console.log(input + "是偶数吗" + result1);*/
+
+		//逻辑运算符
+		//从弹框中输入一个年份，判断是否为闰年，如果是闰年，则打印输出true，否则输出false
+		
+		/*var year = window.prompt("请输入年份");
+		var result =( year % 4 == 0 && year % 100 != 0 ) || (year % 400 == 0);
+		console.log(result);*/
+
+		var input = window.prompt("请输入一个字符");
+		var result1 =( input >= 'a' && input <= 'z') || (input >= 'A' && input <= 'Z');
+		console.log(input + "是字母吗" + result1);
+		var result2 = input >= "\u4e00" && input <= "\u9fa5";
+		console.log(input + "是汉字吗" + result2);
+		console.log(input + "是数字吗" + !(isNaN(input)));
 	</script>
  </body>
 </html>

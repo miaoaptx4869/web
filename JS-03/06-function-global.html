@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+	    var a = 10 , b = 20;
+		c = 30;
+		function showMsg(){
+			d = 40;  //因为声明没加var，所以为全局变量
+			console.log("Masg");
+			console.log(a , b , c, d);
+		}
+
+		function showInfo(){
+			console.log("Info");
+			console.log(a , b , c , d);
+		}
+
+		//声明提前
+		function show(){
+			//将var num预读到这
+			console.log(num);
+			var num = 55;
+			console.log(num);
+		}
+
+		function change(a , b){
+			a ^= b;
+			b ^= a;
+			a ^= b;
+		}
+			
+		//按值传递
+		function testChange(){
+			var a= 15;
+			var b = 18;
+			console.log("before");
+			console.log(a , b);
+			change(a,b);
+			console.log("after");
+			console.log(a,b);
+		}
+	</script>
+	<button onclick = "showMsg()">showMsg</button>
+	<button onclick = "showInfo()">showInfo</button>
+	<button onclick = "show()">show</button>
+	<button onclick = "testChange()">testChange</button>
+	
+ </body>
+</html>
