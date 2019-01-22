@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function printStar1(){
+			for (var i = 1; i <= 5 ;i++ )
+			{
+				var str = "";
+				for (var j = 1;j <= 6 ;j++ )
+				{
+					str += "*"
+				}
+				console.log(str);
+			}
+		}
+
+		function printStar2(){
+			for (var i = 1;i <= 5 ;i++ )
+			{
+				var str = "";
+				for (j = 1;j <= i ;j++ )
+				{
+					str += "*";
+				}
+				console.log(str);
+			}
+		}
+
+		function printStar3(){
+			for (var i = 1;i <= 5 ;i++ )
+			{
+				var str ="";
+				for (var j = 5;j >= i ;j-- )
+				{
+					str += " ";
+				}
+				for (var k = 1;k <= 2*i-1 ;k++ )
+				{
+					str += "*";
+				}
+				for (var j = 5;j >= i ;j-- )
+				{
+					str += " ";
+				}
+				console.log(str);
+			}
+		}
+	</script>
+	<button onclick = "printStar1()">打印星星1</button>
+	<button onclick = "printStar2()">打印星星2</button>
+	<button onclick = "printStar3()">打印星星3</button>
+ </body>
+</html>

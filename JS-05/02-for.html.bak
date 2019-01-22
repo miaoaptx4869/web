@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function printTable(){
+			var num = Number(prompt("Input number"));
+			var i , str = "";
+			for (i = 1;i <= num ;i++ )
+			{
+				str += i + "*" + num + "=" + i*num + " ";
+			}
+			console.log(str);
+		}
+
+		
+		function calSum(){
+			var i , sum = 0;
+			//循环从1开始，到999结束，按奇数方式递增
+			for (i = 1;i <= 999 ;i += 2 )
+			{
+				sum += 1 / i;
+			}
+			console.log(sum);
+		}
+
+		function isSu(){
+			var number = Number(prompt("Input number"));
+			var i , flag = 1;
+			for (i = 2;i < number ;i++ )
+			{
+				if (number % i == 0)
+				{
+					console.log(number + "不是素数");
+					flag = 0;
+					break;
+				}
+			}
+			if (flag == 1)
+			{
+				console.log(number + "是素数");
+			}
+		}
+
+		function printRa(){
+			var n1 = 1 , n2 = 1;
+			var i = 1;
+			for (i = 1;i<= 10 ;i++ )
+			{
+				console.log("第" + i + "个月有" + n1 + "对兔子");
+				var temp = n2;
+				n2 = n1 + n2;
+				n1 = temp;
+			}
+		}
+
+		function printSum(){
+			for (var i = 1 , j = 6;i<= 6 ;i++,j-- )
+			{
+				console.log(i + "+" + j + "=" i + j);
+			}
+		}
+	</script>
+	<button onclick ="printTable()">打印乘法表</button>
+	<button onclick ="calSum()">打印数列和</button>
+	<button onclick ="isSu()">判断是否是素数</button>
+	<button onclick ="printRa()">打印兔子</button>
+	<button onclick = "printSum()">打印</button>
+ </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>数组作业</title>
+ </head>
+ <body>
+	<script>
+		function decode2Bin(){
+			var input = Number(prompt("Input data"));
+			var result = [] , temp = input;
+			while (temp != 0)
+			{
+				result.unshift(temp % 2);
+				temp = parseInt(temp/2);
+			}
+			console.log(result.join(""));
+		}
+
+		 
+	</script>
+	<button onclick = "decode2Bin()">进制转换</button>
+ </body>
+</html>

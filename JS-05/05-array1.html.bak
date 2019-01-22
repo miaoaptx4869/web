@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function showArray(){
+			var array = ["张无忌","赵敏"];
+			array[1] = "周芷若";
+            array[2] = "小昭";
+
+			array[5] = "灭绝师太";
+			console.log(array);
+
+			console.log(array.length);
+		}
+	</script>
+	<button onclick = "showArray()">打印数组</button>
+ </body>
+
+</html>
