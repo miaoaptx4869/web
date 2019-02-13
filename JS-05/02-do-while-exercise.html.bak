@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function printTable(){
+			var num = Number(prompt("Input number"));
+			var i , str = "";
+			for (i = 1;i <= num ;i++ )
+			{
+				str += i + "*" + num + "=" + i*num;
+			}
+			console.log(str);
+		}
+	</script>
+	<button onclick ="printTable()">打印乘法表</button>
+ </body>
+</html>

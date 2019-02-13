@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function guess(){
+			var number = parseInt(Math.random() * 100) + 1;
+			var input;
+
+			do
+			{
+				input = prompt("Input number");
+				if (input != "exit")
+				{
+					if (input > number)
+					{
+						alert("Too big");
+					}else if (input < number)
+					{
+						alert("Too small");
+					}else{
+						alert("right");
+						
+					}
+				}else{
+					break;
+				}
+				
+			}
+			while (input != number);
+		}
+	</script>
+	<button onclick = "guess()">猜数字</button>
+ </body>
+</html>

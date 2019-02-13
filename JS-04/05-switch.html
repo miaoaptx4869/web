@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+ </head>
+ <body>
+    <script src = "isRun.js"></script>
+	<script>
+		function meal(){
+			var num = Number(prompt("红烧肉？"));
+
+			switch(num){
+				case 1:
+					console.log("今天吃红烧肉");
+					break;
+				case 2:
+					console.log("今天吃红烧排骨");
+					break;
+				case 3:
+					console.log("今天吃红烧排骨");	
+					break;
+				case 4:
+					console.log("红烧鱼");
+					break;
+				case 5:
+					console.log("烤羊腿");
+					break;
+				case 6:
+				case 7:
+					console.log("休息");
+					break;
+				default:
+					console.log("输入有误");
+			}
+		}
+
+		function printDay(){
+			var month = Number(prompt("Input month"));
+			var year = Number(prompt("Input year"));
+
+			switch (month)
+			{
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				console.log("31天");
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				console.log("30天");
+				break;
+			case 2:
+				if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+				{
+					console.log("29天");
+				}else{
+					console.log("28天");
+				}
+				break;
+			default:
+			    console.log("输入出错");
+			
+			}
+		}
+
+		function calDate(){
+			
+			var year = Number(prompt("Input year"));
+			var month = Number(prompt("Input month"));
+			var day = Number(prompt("Input day"));
+			var totalDays = 0;
+			
+			switch (month - 1)
+			{
+			case 11:
+				totalDays += 30;
+			case 10:
+				totalDays += 31;
+			case 9:
+				totalDays += 30;
+			case 8:
+				totalDays += 31;
+			case 7:
+				totalDays += 31;
+			case 6:
+				totalDays += 30;
+			case 5:
+				totalDays += 31;
+			case 4:
+			    totalDays += 30;
+			case 3:
+				totalDays += 31;
+			case 2:
+				if (isRun(year))
+				{
+					totalDays += 29;
+				}else{
+					totalDays += 28;
+				}
+			case 1:
+				totalDays += 31;
+				break;
+			default:
+				console.log("输出错误");
+				
+			
+			}
+			totalDays += day;
+
+			console.log(totalDays);
+		}
+	</script>
+	<button onclick = "meal()">测试switch</button>
+
+	<button onclick = "printDay()">输出月份的天数</button>
+	<button onclick = "calDate()">日期计算器</button>
+ </body>
+</html>

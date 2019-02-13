@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function bubbleSort(){
+			var array = [23,9,6,45,78];
+			for (var i = 0;i < array.length-1;i++ )
+			{
+				for (var j = 0;j <array.length-i ;j++ )
+				{
+					if (array[j] > array[j+ 1])
+					{
+						var temp = array[j+1];
+						array[j+1] = array[j];
+						array[j] = temp;
+					}
+				}
+			}
+			console.log(array);
+		}
+	</script>
+	<button onclick = "bubbleSort()">冒泡排序</button>
+ </body>
+</html>

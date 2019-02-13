@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		var arr = [12,6,4,72,115,89];
+		function testSort(){
+			
+			arr.sort();//默认按照Unicode码排序
+			console.log(arr);
+		}
+
+		
+		function testSort1(){
+			arr.sort(function(a,b){return a-b;});
+			console.log(arr);
+		}
+
+		function testSort2(){
+			arr.sort(function(a,b){return b-a;});
+			console.log(arr);
+		}
+	</script>
+	<button onclick = "testSort()">排序（默认）</button>
+	<button onclick = "testSort1()">升序</button>
+	<button onclick = "testSort2()">降序</button>
+ </body>
+</html>

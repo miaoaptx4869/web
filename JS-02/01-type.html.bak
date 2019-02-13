@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>数据类型和数据类型转换</title>
+ </head>
+ <body>
+	<script>
+		var num1=010;
+		var num2=0xA;
+		var num3=1.2e2;
+		console.log(num1,num2,num3);
+
+		var uname = "张三丰";
+		var uage = 68;
+		var ugender = true;
+		var isSon = false;
+		console.log(typeof(uname) , typeof(uage) , typeof(ugender));
+
+		var result1 = uname + uage;
+		console.log(result1 , typeof(result1));
+
+		var result2 = uname + ugender;
+		console.log(result2,typeof(result2));
+
+		var result3 = uage + ugender;
+		console.log(result3,typeof(result3));
+
+		var result = isSon + ugender;
+		console.log(result,typeof(result));
+
+        //1.弹出一个输入提示框，请用户输入金额
+        var input = window.prompt('请输入一个数字');
+		
+		//2.将用户输入的金额+10，表示加上运费后的总金额，在弹出提示，显示计算后的结果
+		/*input = Number(input);
+		var result = input + 10;
+		window.alert(result);*/
+		//3.注释上一行代码后，使用typeof函数检查用户输入的金额的数据类型
+		console.log(typeof(input));
+		//4.尝试把用户输入的金额解析为一个数值，再重复执行上一步程序，观察结果
+
+
+	</script>
+ </body>
+</html>

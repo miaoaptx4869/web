@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+	    //找最大值
+		function findMax(){
+			var msg = prompt("Input data:");
+			var nums = [];
+			while (msg != "exit")
+			{
+				
+				nums[nums.length] = parseInt(msg);
+				i ++;
+				msg = prompt("Input data:");
+			}
+			
+			var max = nums[0];
+			for (var i = 0 ;i <nums.length ;i++ )
+			{
+				if (max < nums[i])
+				{
+					max = nums[i];
+				}
+			}
+			console.log("最大的值:" + max);
+		}
+
+
+		//查找元素的位置
+		function findPosition(){
+			var nums = [38,5,62,789,12,38];
+			var index = [];
+			var data = prompt("请输入一个数字");
+			for (var i = 0;i<nums.length ;i++ )
+			{
+				if (nums[i] == data)
+				{
+					index[index.length] = i;
+					
+					
+				}
+			}
+			if (index.length == 0)
+			{
+				console.log("not found");
+			}else{
+				console.log("出现的下标为"+index);
+			}
+			
+		}
+	</script>
+	<button onclick = "findMax()">查找最大值</button>
+	<button onclick = "findPosition()">查找位置</button>
+ </body>
+</html>

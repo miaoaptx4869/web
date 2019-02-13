@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>复杂表单</title>
+ </head>
+ <body>
+	<h1>修改个人信息</h1>
+	<form name="form1" method="post" action="data/user.jsp">
+	<!--get方式是默认的，post方式是将信息打包，将包发送出去 -->
+		<table border="1px" bordercolor="black" cellspacing="0" width="800px">
+			<tr>
+				<td height="40px" width="50px">姓名：</td>
+				<td ><input type="text" name="name"/></td>
+				
+			</tr>
+			<tr>
+				<td height="40px">性别：</td>
+				<td><input type="radio" name="sex" value="man" checked/>男
+				    <input type="radio" name="sex" value="woman" />女
+					<!--单选框的type为radio
+					必备属性：name 组名（一组单选框name必须相同） value 选项值-->
+				</td>
+				
+			</tr>
+			<tr>
+				<td height="40px">爱好：</td>
+				<td height="40px">
+					<input type="checkbox" name="like" value="music" checked/>音乐
+					<input type="checkbox" name="like" value="art" checked/>美术
+					<input type="checkbox" name="like" value="sport"/>运动
+					<input type="checkbox" name="like" value="game" checked/>游戏
+					<input type="checkbox" />旅行
+				</td>
+		
+			</tr>
+			<tr>
+				<td height="40px">学历：</td>
+				<td>
+					<select name="xveli">
+						<option value="other">其他</option>
+						<option>专科</option>
+						<option selected>本科</option>
+						<option>硕士及以上</option>
+					</select>
+				</td>
+				
+			</tr>
+			<tr>
+				<!-- select的属性：
+				     name:size 菜单行数，默认为1行
+					 multiple 允许多选。仅适用于多行菜单
+					 selected 加在option上，定义菜单默认已选中-->
+				<td height="40px">意向工作城市：</td>
+				<td>
+					<select name="city" size="5" multiple>
+					    <option>请选择意向城市</option>
+						<option selected>北京</option>
+						<option selected>天津</option>
+						<option>上海</option>
+						<option>成都</option>
+						<option>深圳</option>
+					</select>
+				</td>
+				
+			</tr>
+			<tr>
+				<td height="40px">个人描述：</td>
+				<td>
+					<textarea name="discrip" cols="40" rows="8">这家伙很懒，什么都没留下</textarea>
+				</td>
+				
+			</tr>
+			<tr>
+				<td height="40px"></td>
+				<td>
+					<input type="checkbox" name="secret" id="secret">
+						<label for="secret">不要公开我的个人信息</label>
+					<input type="hidden" value="你看不见我" name="hidden"/>
+				</td>
+				
+			</tr>
+			<tr>
+				<td height="40px"></td>
+				<td>
+					<input type="submit" value="保存"/>
+				    <input type="reset" value="重填">
+					<input type="button" value="按钮"/>
+					<button>这是个按钮</button>
+					<input type="image" src="btn_register.jpg"/>
+					<!--一般不用 -->
+				</td>
+				
+			</tr>
+		</table>
+
+		<p>
+		用户邮箱
+			<input type="email" name="uemail"/>
+		</p>
+
+		<p>
+			用户年龄：
+			<input type="number" min="18" max="70" step="5"/>
+		</p>
+
+		<p>
+			选取范围：
+			<input type="range" min="0" max="100" value="50"/>
+		</p>
+
+		<p>
+			日期：
+			<input type="date" name="date"/>
+			<input type="week" name="week"/>
+			<input type="month" name="month"/>
+		</p>
+		<p>
+		
+			<input type="submit" value="提交"/>
+		</p>
+        
+		<p>
+		    搜索类型
+			<input type="search"/>
+		</p>
+		
+		
+	</form>
+ </body>
+</html>

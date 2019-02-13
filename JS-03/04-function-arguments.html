@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+	//带参数的函数
+		function change(a,b){
+			
+			console.log(a , b);
+			a > b && (a ^= b,b ^= a, a^=b);
+			console.log(a,b);
+		}
+		
+  </script>
+  <button onclick = "a = Number(prompt('输入数字'));b = Number(prompt('再输入数字'));change(a,b);"></button>
+ </body>
+</html>

@@ -1,0 +1,28 @@
+双标记：
+<p>lalala</p>
+<div>maiomaio</div>
+<header>wangwang</header>
+
+单标记：
+<br>
+<hr>
+<img>
+<input>
+
+<br/>
+<hr/>
+<img/>
+<input/>
+
+嵌套标记
+<body>
+	<div>
+        	<a>
+ 			<b>这是一段测试文本</b>
+                </a>
+        </div>
+</body>
+
+
+标记的属性
+<div align="center" id="container" title="这是一个div"></div>

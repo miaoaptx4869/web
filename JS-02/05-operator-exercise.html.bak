@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>短路逻辑</title>
+ </head>
+ <body>
+	<script>
+			var a = Number(window.prompt("请输入一个数字"));
+			var b = Number(window.prompt("请再输入一个数字"));
+			a > b && console.log("a 比 b大");   //通过短路&&来判断a 与b 的大小关系并给出提示
+			 //a比b大，则交换两个数字的位置
+			console.log("交换前");
+			console.log(a,b);
+			a > b && (t = a,a=b,b=temp);
+			
+			console.log("交换后");
+			console.log(a , b);
+	</script>
+ </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+	    
+		function getMoney(){
+			//1.先声明输入和输出变量
+			var price , count , money , total , change;
+			//2.为输入变量赋值（弹框赋值）price,count
+			price = prompt("输入商品单价");  //Number可有可不有，两个字符串做乘法运算，会转成数字类型
+			count = prompt("输入购买个数");
+			//3.计算应收金额
+			total = price * count;
+			if (total >= 500)
+			{
+				console.log("您消费已超500，享受8折优惠");
+				total *= 0.8;
+			}
+			console.log("您共消费" + total + "元");
+			//4.为输入变量赋值（弹框赋值）
+			money =  prompt("输入所收金额");
+			if (money >= total)
+			{
+				//5.计算找零
+				change = money - total; 
+				console.log("找零" + change + "元");
+			}else{
+				console.log("付款金额不足");
+			}
+
+			
+
+			
+		}
+
+	</script>
+	<button onclick = "getMoney();">找零程序</button>
+ </body>
+</html>

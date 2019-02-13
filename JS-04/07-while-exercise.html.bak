@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		function calSum(){
+			var i = 1 , sum = 0;
+			while (i <= 100)
+			{
+				
+				if ((i & 1) == 1)
+				{
+					i++;
+					continue;
+					
+					
+				}
+				sum += i;
+				i++;
+			}
+			console.log(sum);
+		}
+
+		function calSum1(){
+			var i = 1 , sum = 0;
+			while (i <= 100)
+			{
+				
+				if ((i & 1) != 1)
+				{
+					sum += i;
+				}
+				i++;
+			}
+			console.log(sum);
+		}
+
+		function printMessage(){
+			var message = prompt("请输入信息");
+			while (message != "exit")
+			{
+				console.log(message);
+				message = prompt("请输入信息");
+			}
+		}
+
+		function guess(){
+			var r = parseInt(Math.random()*100) + 1;
+			var guess;
+
+			while((guess = prompt("请输入一个数字")) != "exit"){
+				guess = Number(guess);
+				if (guess < r)
+				{
+					console.log("猜小了");
+				}else if (guess > r)
+				{
+					console.log("猜大了");
+				}else{
+					break;
+				}
+			}
+		}
+	</script>	
+	<button onclick = "calSum();">输出和</button>
+	<button onclick = "calSum1();">输出和1</button>
+	<button onclick = "printMessage();">输出</button>
+	<button onclick = "guess();">猜数字游戏</button>
+ </body>
+ 
+</html>

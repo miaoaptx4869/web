@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>循环结构</title>
+ </head>
+ <body>
+	<script>
+	    //打印10次Hello World
+		function print10Hello(){
+			var i = 0;
+			while (i < 10)
+			{
+				console.log("Hello World");
+				//更新循环变量，以便让循环能够结束
+				i++;
+			}
+
+		}
+
+		function print10000Hello(){
+			var i = 0;
+			while (i < 10000)
+			{
+				console.log("Hello World");
+				//更新循环变量，以便让循环能够结束
+				i++;
+			}
+
+		}
+
+		function printHello(){
+			var i = 1;
+			while(i <= 10){
+				console.log("第" + i + "句 Hello World");
+				i ++;
+			}
+		}
+
+		function print(){
+			var i = 1;
+			while(i <= 10){
+				console.log("第" + i + "句 你好 世界");
+				i ++;
+			}
+		}
+
+		function printNum(){
+			var i = 1 , sum = 0;;
+			while (i <= 100)
+			{
+				sum += i;
+				i++;
+			}
+			console.log("1~100之间所有数字的和为"+sum);
+		}
+	</script>
+
+ </body>
+
+	<button onclick = "print10Hello()">输入10句Hello World</button>
+	<button onclick = "print10000Hello()">输入10000句Hello World</button>
+	<button onclick = "printHello()">输入Hello World</button>
+	<button onclick = "print()">输入你好 世界</button>
+    <button onclick = "printNum()">输出和</button>
+</html>
