@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+	<a href="#img1">图片1</a>
+	<a href="#">图片2</a>
+	<a href="#">图片3</a>
+	<a href="#">图片4</a>
+ </body>
+</html>

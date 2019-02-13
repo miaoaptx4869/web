@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <style>
+	#container{
+		width:900px;
+		height:150px;
+		box-sizing:border-box;
+		border:1px solid #D0E4C2;
+	}
+
+	#container>a{
+		border:1px solid #ccc;
+		border-radius:5px;
+		padding:3px 10px;
+	}
+  </style>
+ </head>
+ <body>
+	<div id = "container"></div>
+	<p id = "page">
+		<a>1</a>
+		<a>2</a>
+		<a>3</a>
+		<a>4</a>
+		<a>5</a>
+		<a>6</a>
+	</p>
+ </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <script src = "../common.js"></script>
+  <script>
+	function getInfo(){
+		var xhr = createXhr();
+		xhr.open("get","06-ajax-exercise.php",true);
+		xhr.onreadystatuschange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200)
+			{
+				$("msg-show").innerHTML = xhr.responseText;
+			}
+		}
+		xhr.send(null);
+	}
+  </script>
+  <title>Document</title>
+ </head>
+ <body>
+		<div id = "msg-show"></div>
+		<button onclick = "getInfo()"></button>
+ </body>
+</html>

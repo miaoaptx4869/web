@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>堆叠属性</title>
+  <style>
+	#d1,#d2,#d3{
+		width:100px;
+		height:100px;
+		position:absolute;
+	}
+
+	#d1{
+		background:red;
+		left:0px;
+		top:0;
+	}
+
+	#d2{
+		background:green;
+		left:30px;
+		top:30px;
+	}
+
+	#d3{
+		background:blue;
+		left:60px;
+		top:60px;
+	}
+
+	#d1:hover{
+		z-index:1;
+	}
+
+	#d2:hover{
+		z-index:1;
+
+	}
+
+	#d3:hover{
+		z-index:1;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+ </body>
+</html>

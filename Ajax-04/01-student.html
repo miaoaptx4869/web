@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <script src = "../common.js"></script>
+  <script>
+	function showXML(){
+		var xhr = createXhr();
+		xhr.open("get","01-student.xml",true);
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200)
+			{
+				var xmlDoc =xhr.responseXML;
+
+				//在xmlDoc中获取所有的student元素
+				var students =
+				xmlDoc.getElementsByTagName("student");
+				for (var i = 0 ;i<students.length ;i++ )
+				{
+					var stu = students[i];
+					var name = stu.getElementsByTagName("name")[0];
+					var age = stu.getElementsByTagName("age")[0];
+					var gender = stu.getElementsByTagName("gender")[0];
+					console.log(name.innerHTML);
+					console.log(age.innerHTML);
+					console.log(gender.innerHTML);
+				}
+				//console.log(students);
+
+				/*var studentList = xmlDoc.getElementsByTagName("studentList");
+				console.log(studentList[0]);*/
+			}
+		}
+		xhr.send(null);
+	
+	}
+  </script>
+ </head>
+ <body>
+	<button onclick = "showXML()">显示XML返回信息</button>
+ </body>
+</html>

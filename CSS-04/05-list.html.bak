@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+
+  <style>
+	#list li{
+		border:1px solid black;
+	}
+
+	#list{
+		padding:0;
+	}
+  </style>
+ </head>
+ <body>
+	<ul id="list">
+		<li>漩涡鸣人</li>
+		<li>宇智波佐助</li>
+		<li>春野樱</li>
+		<li>旗木卡卡西</li>
+	</ul>
+ </body>
+</html>

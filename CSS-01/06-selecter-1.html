@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>后代/子代选择器</title>
+  <style>
+	/*设置d1中所有的span文字颜色为蓝色*/
+		#d1 span{
+			color:blue;
+		}
+	/*设置#d1中的直接子级span元素，背景为orange*/
+	#d1>span{
+		background:orange;
+	}
+	/*设置#d1中的p中的span元素，背景颜色为pink*/
+	#d1>p>span{
+		background:pink;
+	}
+	</style>
+ </head>
+ <body>
+   
+    <a href = "http://www.baidu.com">百度</a>
+	<div id="d1">
+		<span>这是d1中的span</span>
+		<p>
+			<span>这是d1中的p中的span<span>
+		</p>
+	</div>
+	<p>
+		<span>这是p中的span</span>
+	</p>
+ </body>
+</html>

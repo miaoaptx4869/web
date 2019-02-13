@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+  <script src = "00-common.js"></script>
+
+  <script>
+	function province(){
+		var xhr = createXhr();
+		xhr.open("get","02-province.php",false);
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200)
+			{
+				$("show").innerHTML = xhr.responseText;
+			}
+		}
+		xhr.send(null);
+	
+	}
+
+	function changeProvince(){
+		var xhr = createXhr();
+		console.log($("show").value);
+		xhr.open("get","02-loadCity.php?show="+$("show").value,true);  //将访问方式改为同步，确保能够在加载完省份信息后再加载城市信息
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200)
+			{
+				$("showCity").innerHTML = xhr.responseText;
+			}
+		}
+		xhr.send(null);
+	
+	}
+
+	function pageLoad(){
+		province();
+		changeProvince();
+	}
+  </script>
+ </head>
+ <body onload = "pageLoad()">
+	<select id = "show" onchange = "changeProvince()">
+	
+	</select>
+	<select id = "showCity" >
+
+	</select>
+ </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <script src = "00-common.js"></script>
+  <script>
+	function getUsers(){
+		var xhr = createXhr();
+		xhr.open("get","users.json",true);
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200)
+			{
+				var resText = xhr.responseText;
+				var array = JSON.parse(resText);
+				for (var i = 0 ;i<array.length ;i++ )
+				{
+					console.log("用户名称:" + array[i].uname);
+					console.log("用户密码:" + array[i].upwd);
+					console.log("用户性别:" + array[i].gender);
+					console.log("\n");
+				}
+			}
+		}
+		xhr.send(null);
+	}
+  </script>
+ </head>
+ <body>
+	<button onclick = "getUsers()">显示用户信息</button>
+ </body>
+</html>

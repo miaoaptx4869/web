@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+  <script src = "00-common.js"></script>
+  <script>
+		function checkLogin(){
+			var xhr = createXhr();
+			xhr.open("post","01-check-login.php",true);
+			
+			xhr.onreadystatechange=function(){
+				if (xhr.readyState == 4 && xhr.status == 200)
+				{
+					$("show").innerHTML = xhr.responseText;
+				}
+			}
+			
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+			xhr.send("uname=" + $("uname").value + "&upwd=" + $("upwd").value);
+		}
+  </script>
+ </head>
+ <body>
+    <div id = "show"></div>
+	<p>
+	用户名称：
+	<input type = "text" id = "uname"/>
+	</p>
+
+	<p>
+		用户密码：<input type = "password" id = "upwd"/>
+	</p>
+
+	<p>
+		<input type = "button" value = "登录" onclick = "checkLogin()"/>
+	</p>
+ </body>
+</html>

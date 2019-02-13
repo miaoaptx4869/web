@@ -1,0 +1,21 @@
+<?xml version ="1.0" encoding = "utf-8"?>
+
+<studentList>
+	<student>
+		<name>范冰冰</name>
+		<gender>女</gender>
+		<age>40</age>
+	</student>
+	<student>
+		<name>杨幂</name>
+		<gender>女</gender>
+		<age>31</age>
+	</student>
+	<student>
+		<name>罗玉凤</name>
+		<gender>女</gender>
+		<age>40</age>
+	</student>
+</studentList>
+
+

@@ -1,0 +1,16 @@
+[{
+	"uname" :"范冰冰",
+	"upwd":40,
+	"gender":"女"
+},
+{
+	"uname" :"李晨",
+	"upwd":41,
+	"gender":"男"
+},
+{
+	"uname" :"杨幂",
+	"upwd":31,
+	"gender":"女"
+}
+]

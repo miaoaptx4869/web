@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <style>
+		.title{
+			font-size:24px;
+		}
+
+		.text{
+			background:yellow;
+			color:red;
+			
+		}
+		p.text{
+			font-size:36px;
+		}
+
+		#container{
+			font-size:36px;
+			background:purple;
+			font-style:italic;
+		}
+	</style>
+ </head>
+ <body>
+	<!--静夜思：以24px大小显示，增加一个类选择器.title ,div去引用 -->
+	<!--疑是地上霜和低头思故乡
+	    背景颜色为黄色，文本颜色为红色，增加一个.text 让两个div去引用
+		
+		设置class为text的p标记，文本大小为36px
+		
+		想让class为title的div元素，同时也具备text选择器的效果-->
+	
+	<div class = "title text">静夜思</div>
+	<p class ="text">床前明月光</p>
+	<div class ="text">疑是地上霜</div>
+	<p class ="text">举头望明月</p>
+	<div class ="text">低头思故乡</div>
+	<div id = "container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, molestiae, quod, nobis sunt veritatis inventore animi mollitia laudantium sed aperiam explicabo ullam placeat iusto error et repellendus voluptatum iste reprehenderit!</div>
+ </body>
+</html>

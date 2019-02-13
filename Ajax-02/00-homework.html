@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <script src = "../common.js"></script>
+  <script>
+    //动态显示数据，并显示在tbody中
+	function fillContent(){
+		//1.拼要显示在tbody中的字符串
+		$("tbody").innerHTML="<tr><td>1</td><td>《西游记》</td><td>吴承恩</td><td><button>修改</button><button>删除</button></td></tr>"
+		//2.获取tbody
+		//3.将拼好的字符串设置给tbody的innerHTML
+	}
+  </script>
+ </head>
+ <body>
+	<button onclick ="fillContent()">显示数据</button>
+	
+	<table border = "1" cellspacing = "0px">
+		<thead>
+			<tr>
+				<th>编号</th>
+				<th>书名</th>
+				<th>作者</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+
+		<tbody id = "tbody">
+			
+		</tbody>
+	<table>
+	
+ </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>内边距</title>
+  <style>
+	#d1,#d2,#d3,#d4{
+		width:200px;
+		height:200px;
+		border:2px solid #f00;
+		margin-bottom:20px;
+	}
+
+	#d1{
+		padding:20px;
+	}
+
+	#d3{
+		padding:18px 37px 16px 8px;
+		/*想让#d3总体占地时200*200（包含边框和内边距）*/
+		width:151px;
+		height:162px;
+	}
+
+	#d4{
+		padding:18px 37px 16px 8px;
+		/*想让#d3总体占地时200*200（包含边框和内边距）*/
+		box-sizing:border-box;
+	}
+  </style>
+ </head>
+ <body>
+	<div id = "d4">这是d4元素</div>
+	<div id = "d3"></div>
+	<div id = "d1">lala</div>
+	<div id="d2">miaomiao</div>
+ </body>
+</html>

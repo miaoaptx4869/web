@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <style>
+	#s1{
+		margin-top:100px;
+	}
+  </style>
+ </head>
+ <body>
+	<p id="s1">这是一个span（行内元素）</p>
+ </body>
+</html>

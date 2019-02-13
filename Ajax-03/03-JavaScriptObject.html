@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>JS中的对象表现</title>
+ </head>
+ <body>
+	<script>
+		function showObject(){
+			//1.创建一个对象，名称为fbb,包含三个属性，yuwen,shuxve,yingyu
+			var fbb = {
+				yuwen:121,
+				shuxve:73,
+				yingyu:116
+			};
+			//2打印fbb的三个属性
+			console.log("yuwen:" + fbb.yuwen);
+			console.log("shuxve:" + fbb.shuxve);
+			console.log("yingyu:" + fbb.yingyu);
+		}
+
+		function testObject(){
+			var yangmi ={
+				height:165,
+				weight:50,
+				gender:"女"
+			};
+			console.log("height:" + yangmi.height);
+			console.log("weight:" + yangmi.weight);
+			console.log("gender:" + yangmi.gender);
+		}
+
+		function showObjectArray(){
+			var fbb = {
+				height:121,
+				weight:73,
+				gender:"女"
+			};
+			var yangmi ={
+				height:165,
+				weight:50,
+				gender:"女"
+			};
+			//声明一个数组，保存fbb 和 yangmi
+			var star = [fbb,yangmi];
+			for (var i = 0;i < star.length ;i++ )
+			{
+				console.log(star[i].height,star[i].weight,star[i].gender);
+			}
+		}
+		function showObjectArray1(){
+			
+			//声明一个数组，保存fbb 和 yangmi
+			var star = [{
+				height:121,
+				weight:73,
+				gender:"女"
+			},
+			{
+				height:165,
+				weight:50,
+				gender:"女"
+			}];
+			for (var i = 0;i < star.length ;i++ )
+			{
+				console.log(star[i].height,star[i].weight,star[i].gender);
+			}
+		 }
+	</script>
+	<button onclick = "showObject()">显示对象</button>
+	<button onclick = "showObjectArray()">显示对象数组</button>
+ </body>
+</html>

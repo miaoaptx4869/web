@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+  <style>
+	#d1,#d2,#d3,#d4{
+		width:200px;
+		height:200px;
+		float:left;
+	}
+
+	#d1{
+		
+		background:red;
+		
+	}
+	#d2{
+		
+		background:green;
+		
+	}
+	#d3{
+		
+		background:blue;
+		clear:left;
+	
+	}
+	#d4{
+	
+		background:orange;
+
+	}
+  </style>
+ </head>
+ <body>
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+	<div id="d4"></div>
+ </body>
+</html>

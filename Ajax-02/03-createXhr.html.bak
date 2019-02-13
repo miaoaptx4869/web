@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <script src = "../common.js"></script>
+ </head>
+ <body>
+	<script>
+		function getAjax(){
+			var xhr;
+			if (window.XMLHttpRequest)
+			{
+				xhr = new XMLHttpRequest();
+			}else{
+				xhr = new ActiveXObject("Microsoft.XMLHttp");
+			}
+			console.log(xhr);
+		}
+		
+		function testCreateXhr(){
+			console.log(createXhr());
+		}
+	</script>
+	<button onclick = "getAjax()">获取Ajax核心</button>
+	<button onclick = "testCreateXhr()">测试Ajax核心</button>
+ </body>
+</html>

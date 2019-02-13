@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>鼠标悬停效果</title>
+
+  <style>
+	div{
+		cursor:pointer;
+	}
+  </style>
+ </head>
+ <body>
+	<div>la</div>
+ </body>
+</html>

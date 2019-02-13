@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+  <script src = "../common.js"></script>
+  <script>
+	function phpXml(){
+		var xhr = createXhr();
+		xhr.open("get","03-php-xml.php",true);
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200)
+			{
+				var xmlDoc = xhr.responseXML;
+				console.log(xmlDoc.getElementsByTagName("name")[0]);
+				console.log(xmlDoc.getElementsByTagName("gender"));
+				console.log(xmlDoc.getElementsByTagName("age"));
+
+				
+			}
+		}
+		xhr.send(null);
+	}
+  </script>
+ </head>
+ <body>
+	<button onclick = "phpXml()">使用php调用xml</button>
+ </body>
+</html>

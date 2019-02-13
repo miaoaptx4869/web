@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>固定定位</title>
+  <style>
+	body{
+		height:2000px;
+	}
+	span{
+		position:fixed;
+		width:30px;
+		height:150px;
+		top:200px;
+	}
+
+	#s1{
+		left:0px;
+	}
+
+	#s2{
+		right:0px;
+	}
+  </style>
+ </head>
+ <body>
+	<span id="s1"></span>
+	<span id="s2"></span>
+ </body>
+</html>

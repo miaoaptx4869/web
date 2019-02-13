@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+  <script src = "../common.js"></script>
+  <script>
+		function testAjax(){
+			var xhr = createXhr();
+			
+			xhr.open("get","07-ajax-params.php?uname="+$("uname").value,true);
+			xhr.onreadystatechange = function(){
+				if (xhr.readyState == 4 && xhr.status == 200)
+				{
+					$("show").innerHTML=xhr.responseText;
+				}
+			}
+			xhr.send(null);
+		}
+  </script>
+ </head>
+ <body>
+	用户名：<input type = "text" onblur = "testAjax()" id = "uname"/>
+	<div id = "show"></div>
+ </body>
+</html>

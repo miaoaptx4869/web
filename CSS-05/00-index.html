@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+  <style>
+	div.class{
+		width:960px;
+		
+		margin:0 auto;
+		position:relative;
+	}
+	ul{
+		list-style-type:none;
+		padding:0;
+		margin:0;
+	}
+
+	img{
+		vertical-align:bottom;
+	}
+	
+	#banner img{
+		width:960px;
+	}
+	#banner{
+		width:960px;
+		height:384px;
+		overflow:hidden;
+		position:relative;
+	}
+	
+	#banner ul.banner-img li{
+		float:left;
+	}
+
+	#banner a.ck-slide{
+		/*绝对定位,宽度，高度，倒角，背景颜色，透明度，上偏移距离*/
+		position:absolute;
+		width:35px;
+		height:70px;
+		border-radius:5px;
+		background:#000;
+		opacity:0.3;
+		
+		top:157px;
+		
+	}
+
+	#banner a.ck-left{
+		left:5px;
+		background:#000 url(../CSS-02/img/img/index/arrow-left.png) no-repeat center center;
+	}
+	
+	#banner a.ck-right{
+		right:5px;
+		background:#000 url(../CSS-02/img/img/index/arrow-right.png) no-repeat center center;
+	}
+	#banner ul.indicators{
+		position:absolute;
+		bottom:30px;
+		left:450px;
+	}
+	
+	#banner ul.indicators li{
+		/*宽度 高度 倒角 背景颜色 右外边框*/
+		width:10px;
+		height:10px;
+		border-radius:50%;
+		background:#fff;
+		margin-right:10px;
+		float:left;
+		cursor:pointer;
+	}
+	/*#d2,#d3{
+		width:30px;
+		height:50px;
+		background:#eee;
+		position:absolute;
+		border-radius:5px;
+		capcity:0.5;
+		top:45%;
+	}
+	
+	#d2{
+		
+	}
+	#d2>img{
+		margin:14px 5px;
+	}
+	#d3{
+		
+		
+		right:0%;
+		
+	}
+	#d3>img{
+		margin-top:14px;
+		margin-left:9px;
+	}
+	
+	
+	#list{
+		position:absolute;
+		bottom:0%;
+		left:50%;
+		
+	}
+	#list li{
+		float:left;
+		border-radius:50%;
+	}*/
+  </style>
+ </head>
+ <body>
+	<div class="main">
+		<div id ="banner">
+			<!--1.图片区域-->
+			<ul class="banner-img">
+				<li>
+					<a>
+						<img src="../CSS-02/img/img/index/banner1.png"/>
+					</a>
+				</li>
+
+				<li>
+					<a>
+						<img src="../CSS-02/img/img/index/banner2.png"/>
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="../CSS-02/img/img/index/banner3.png"/>
+					</a>
+				</li>
+				<li>
+					<a>
+						<img src="../CSS-02/img/img/index/banner4.png"/>
+					</a>
+				</li>
+			</ul>
+			<!--2.左右方向按钮-->
+			<a href="#" class="ck-slide ck-left">
+				
+			</a>
+			<a href="#" class="ck-slide ck-right">
+			
+			</a>
+			<!--3.导航小圆点-->
+
+			<ul class="indicators">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+ </body>
+</html>

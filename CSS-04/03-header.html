@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+
+  <style>
+	.main{
+		width:960px;
+		margin:0 auto;
+	}
+	#logo{
+		float:left;
+	}
+	#input-box img{
+		vertical-align:top;
+	}
+
+	#input-box{
+		border:1px solid #0AA1ED;
+		width:289px;
+		float:left;
+		margin-left:40px;
+		
+	}
+	#search{
+		outline:none;
+		height:32px;
+		border:none;
+		padding-left:10px;
+		float:left;
+	}
+	
+	#img2{
+		float:right;
+	}
+	#img1{
+		margin-top:15px;
+		float:right;
+		
+	}
+	#s1{
+		font-size:12px;
+		margin-top:10px;
+		float:right;
+	}
+	
+	#list{
+		float:right;
+		margin-top:8px;
+	}
+	
+	ul{
+		list-style-type:none;
+		padding:0;
+		font-size:14px;
+		
+		
+	}
+	ul>li{
+		margin-top:20px;
+		margin-right:30px;
+	}
+	#li1{
+		float:left;
+	}
+	
+	#li2{
+		float:left;
+	}
+
+	#li3{
+		float:left;
+	}
+	/*#d1{
+		float:left;
+	}
+
+	#d2{
+		border:1px solid blue;
+		margin-left:20px;
+		float:left;
+		color:#eee;
+	}
+	
+	#d2>input{
+		
+		border:none;
+		outline:none;
+	}
+
+	#d2 img.search{
+		height:100%;
+	}
+	#d3{
+		color:#eee;
+		float:right;
+	}
+	*/
+	a{
+		text-decoration:none;
+		color:#808080;
+	}
+
+	a:hover{
+		color:#0AA1ED;
+	}
+  </style>
+
+ </head>
+ <body>
+	<div class="main">
+		<header id="header-top">
+			
+			<a href="#" id="logo">
+				<img src="../CSS-02/img/logo.png">
+			</a>
+
+			
+			<div id="input-box">
+				<input type="text" placeholder="请输入您要搜索的内容" id="search"/>
+				<img src="../CSS-02/img/search.png" id="img2">
+				<img src="../CSS-02/img/header_normal.png" id="img1">
+				<span id="s1">分类搜索</span>
+				
+				
+			</div>
+			<div id="list">
+				<a href="#">
+					<img src="../CSS-02/img/img/header/care.png">
+				</a>
+				<span>|</span>
+				<a href="#">
+					<img src="../CSS-02/img/img/header/order.png">
+				</a>
+				<span>|</span>
+				<a href="#">
+					<img src="../CSS-02/img/img/header/shop_car.png">
+				</a>
+				<span>|</span>
+				<a href="#">注册</a>
+				<span>|</span>
+				<a href="#">登录</a>
+				<span>|</span>
+			</div>
+			<div style="clear:both"></div>
+		
+		</header>
+		
+		
+		<ul>
+			<li id ="li1">
+				<a href="#">首页</a>
+			</li>
+			<li id ="li2">
+				<a href="#">学习用品</a>
+			</li>
+			<li id ="li3">
+				<a href="#">私人订制</a>
+			</li>
+		</ul>
+		
+		
+	</div>
+ </body>
+</html>

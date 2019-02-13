@@ -1,0 +1,4 @@
+<?php
+	$uname =$REQUEST("uname");
+	echo "欢迎"+uname;
+?>

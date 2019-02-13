@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+
+  <style>
+	#d1{
+		background:rgba(255,0,0,0.1);
+	}
+	#d2{
+		opacity:0.1;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="d1">
+		<h1>我是第一个h1</h1>
+	</div>
+
+	<div id="d2">
+		<h1>我是第二个h1</h1>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+
+  <style>
+	#d1{
+		float:left;
+	}
+
+	#d2{
+		border:1px solid blue;
+		margin-left:20px;
+		float:left;
+		color:#eee;
+	}
+	
+	#d2>input{
+		
+		border:none;
+		outline:none;
+	}
+
+	#d2.search{
+		height:100%;
+	}
+	#d3{
+		color:#eee;
+		float:right;
+	}
+  </style>
+
+ </head>
+ <body>
+	<div id="d1">
+		<img src="../CSS-02/img/logo.png">
+
+	</div>
+	<div id="d2">
+		<input type="text" placeholder="请输入您要搜索的内容"/>
+		<span>分类搜索</span>
+		<img src="../CSS-02/img/header_normal.png">
+		<img src="../CSS-02/img/search.png" class="search">
+	</div>
+	<div id="d3">
+		<img src="../CSS-02/img/img/header/care.png">
+		<span>|</span>
+		<img src="../CSS-02/img/img/header/order.png">
+		<span>|</span>
+		<img src="../CSS-02/img/img/header/shop_car.png">
+		<span>|</span>
+		<a>注册</a>
+		<span>|</span>
+		<a>登录</a>
+		<span>|</span>
+	</div>
+ </body>
+</html>

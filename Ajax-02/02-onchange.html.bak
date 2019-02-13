@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <script src = "../common.js"></script>
+  <script>
+		function showCity(){
+			var city = [
+			 ["哈尔滨","齐市","大庆"]
+			 ["长春","吉林","吉林"]
+			 ["沈阳","jjj","lll"]
+			]
+			var value = $("selProvince").value;
+			if (value == -1)
+			{
+				$("selCity").innerHTML = "<option>请先选择省份</option>";
+			}else
+			{
+				$("selCity").innerHTML = "<option>" + city[value] +"</option>"
+			}
+		}
+  </script>
+  <title>Document</title>
+ </head>
+ <body>
+	<select id ="selProvince" onchange = "showCity()">
+	    <option value = "-1">===请选择===</option>
+		<option value = "0">黑龙江</option>
+		<option value = "1">吉林</option>
+		<option value = "2">辽宁</option>
+	</select>
+
+	<select id ="selCity()"></select>
+  
+ </body>
+</html>

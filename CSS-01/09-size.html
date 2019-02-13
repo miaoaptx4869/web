@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>尺寸属性</title>
+  <style>
+	#d1{
+		background:red;
+		width:200px;
+		height:200px;
+	}
+
+	#s1{     /*行内元素不能使用width和height*/
+		background:orange;
+		width:200px;
+		height:200px;
+	}
+
+	#b1{
+		background:yellow;
+		width:200px;
+		height:200px;
+	}
+
+	#text{  /*会溢出*/
+		background:green;
+		width:200px;
+		height:200px;
+		overflow:auto;
+	}
+  </style>
+ </head>
+ <body>
+    <div id = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, illum debitis aspernatur pariatur ducimus quisquam tenetur in tempore. Amet, ipsum, optio eaque error animi recusandae dolore doloribus enim repellendus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, illum debitis aspernatur pariatur ducimus quisquam tenetur in tempore. Amet, ipsum, optio eaque error animi recusandae dolore doloribus enim repellendus </div>
+	<div id="d1">这是一个div</div>
+	<span id = "s1">这是一个span</span>
+	<b id="b1">这是一个b</b>
+ </body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version ="1.0" encoding = "utf-8"?>
+
+<studentList>
+	<student name = "lala" gender = "女" age = "10"></student>
+	<student name = "la" gender = "女" age = "10"></student>
+	<student name = "lalala" gender = "女" age = "10"></student>
+</studentList>

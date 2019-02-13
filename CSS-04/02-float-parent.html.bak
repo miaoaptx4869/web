@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>消除浮动带来的影响2</title>
+  <style>
+	#parent{
+		border:2px solid #000;
+		
+	}
+	
+	#d1,#d2,#d3{
+		width:200px;
+		height:200px;
+	}
+
+	#d1{
+		background:red;
+		float:left;
+	}
+
+	#d2{
+		background:green;
+		float:left;
+	}
+
+	#d3{
+		background:blue;
+		float:left;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="parent">
+		<div id="d1"></div>
+		<div id="d2"></div>
+		<div id="d3"></div>
+		<div style="clear:left">为了将parent撑起来</div>
+	</div>
+	<div>这是要在parent后面显示的内容</div>
+ </body>
+</html>

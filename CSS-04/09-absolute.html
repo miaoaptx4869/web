@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>绝对定位</title>
+
+  <style>
+	#d1{
+		width:400px;
+		height:400px;
+		background:red;
+		float:right;
+		position:relative;
+	}
+	
+	#d2{
+		width:200px;
+		height:200px;
+		background:yellow;
+		margin:100px 0 0 100px;
+		position:relative;
+	}
+
+	#d3{
+		width:100px;
+		height:100px;
+		background:pink;
+		position:absolute;
+		right:0px;
+		bottom:0px;
+	}
+  </style>
+ </head>
+ <body>
+	<div id = "d1">
+		<div id="d2">
+			<div id = "d3"></div>
+		</div>
+	</div>
+	
+ </body>
+</html>

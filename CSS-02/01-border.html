@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>边框</title>
+  <style>
+	#container{
+		width:200px;
+		height:200px;
+		border:1px solid orange;  /*因为有边框，所以大小为202*202*/
+		
+		border-top:2px dotted green;
+		border-style:dashed;
+		border-bottom-color:purple;
+		border-right-style:dotted;
+		
+	}
+
+	#uname{
+		outline:none;
+	}
+  </style>
+ </head>
+ <body>
+    <p>
+		<input id="uname" type="text"/>
+	</p>
+	<div id = "container">
+	
+	</div>
+ </body>
+</html>

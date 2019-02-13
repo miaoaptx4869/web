@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>学子</title>
+  <style>
+    img{
+		vertical-align:top;
+	}
+	#input-box{
+		border:1px solid #0AA1ED;
+		width:288px;
+		
+	}
+	#search{
+		outline:none;
+		height:32px;
+		border:none;
+	}
+	
+  </style>
+ </head>
+ <body>
+	<div id="input-box">
+		<!-- 1.文本框
+			 2.分类搜索
+			 3.三角符号
+			 4.查找图片-->
+		<input type="text" id="search" placeholder="请输入您要搜索的内容">
+		<span>分类搜索</span>
+
+		<img src="img/header_normal.png"/>
+		<img src="img/search.png" id="img2"/>
+			
+		
+	</div>
+ </body>
+</html>

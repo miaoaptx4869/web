@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+  <script src = "00-common.js"></script>
+
+  <script>
+	function province(){
+		var xhr = createXhr();
+		xhr.open("get","08-province.php",false);//将访问方式改为同步，确保能够在加载完省份信息后再加载城市信息
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200)
+			{
+				//将resText转换为JS数组
+				var array = JSON.parse(xhr.responseText);
+				var opts = "";
+				for (var i = 0;i<array.length ;i++ )
+				{
+					opts += "<option value = " + i + ">" + array[i] +"</option>";
+				}
+				$("show").innerHTML = opts;
+			}
+		}
+		xhr.send(null);
+	
+	}
+
+	function changeProvince(){
+		var xhr = createXhr();
+		
+		xhr.open("get","08-loadCity-json.php?show="+$("show").value,true);  
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200)
+			{
+				
+				var array = JSON.parse(xhr.responseText);
+				var opts = "";
+				for (var i = 0;i<array.length ;i++ )
+				{
+					opts += "<option value = " + i + ">" + array[i] +"</option>";
+				}
+				$("showCity").innerHTML = opts;
+				
+			}
+		}
+		xhr.send(null);
+	
+	}
+
+	function pageLoad(){
+		province();
+		changeProvince();
+	}
+  </script>
+ </head>
+ <body onload = "pageLoad()">
+	<select id = "show" onchange = "changeProvince()">
+		
+	</select>
+	<select id = "showCity" >
+		
+	</select>
+ </body>
+</html>

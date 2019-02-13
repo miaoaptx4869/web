@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <script src = "../common.js"></script>
+  <script>
+	function showDb(){
+		var xhr = createXhr();
+		xhr.open("get","00-homework.php",true);
+		xhr.onreadystatechange = function(){
+			if (xhr.readyState == 4 && xhr.status == 200)
+			{
+				var resText = xhr.responseText;
+				var opts = "";
+				var array = JSON.parse(resText);
+				
+				for (var i = 0;i<array.length ;i++ )
+				{
+					opts += "<tr>";
+					opts += "<td>"+array[i].uname+"</td>";
+					opts += "<td>"+array[i].email+"</td>";
+					opts += "<td>"+array[i].user_name+"</td>";
+					opts += "<td>";
+					opts += "<a href='#'>删除</a><a href='#'>修改</a></td>";
+					opts += "</tr>";
+				}
+				
+				$("show").innerHTML = opts;
+			}
+		}
+		console.log(xhr);
+		xhr.send(null);
+
+	}
+  </script>
+ </head>
+ <body onload = "showDb()">
+	<table border = "1">
+		<thead>
+			<tr>
+				<td>用户名</td>
+				<td>邮件</td>
+				<td>姓名</td>
+				<td>操作</td>
+			</tr>
+		</thead>
+		<tbody id = "show">
+		</tbody>
+	</table>
+
+ </body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <script src = "../common.js"></script>
+  <script>
+	//当选项发生改变时，要做的操作
+	function changeProvince(){
+		//获取selProvince中选中的value值
+		var val = $("selProvince").value;
+		alert("您选中的值" + val);
+	}
+
+	function loadCity(){
+		var city = [
+		 ["哈尔滨","齐市","大庆"],
+		 ["长春","吉林","吉林"],
+		 ["沈阳","jjj","lll"]
+		]
+		
+		var value = $("selProvince").value;
+		
+		if (value == -1)
+		{
+			$("selCity").innerHTML = "<option>请先选择省份</option>";
+		}else
+		{
+			var htmlcity = city[value];
+			var str="";
+			for (var i = 0 ;i<htmlcity.length ;i++ )
+			{
+				str += "<option>" + htmlcity[i] +"</option>"
+			}
+			$("selCity").innerHTML = str;
+		}
+	}
+  </script>
+ </head>
+ <body>
+	<select id ="selProvince" onchange = "loadCity()">
+	    <option value = "-1">===请选择===</option>
+		<option value = "0">黑龙江</option>
+		<option value = "1">吉林</option>
+		<option value = "2">辽宁</option>
+	</select>
+
+	<select id ="selCity"></select>
+ </body>
+</html>
